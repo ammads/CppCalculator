@@ -13,7 +13,7 @@ class Calculator {
 public:
     Calculator()
     {
-        methodChoice = 0;
+        methodChoice;
         firstNum = 0.00;
         secondNum = 0.00;
         resultNum = 0.00;
@@ -28,14 +28,19 @@ public:
         switch (methodChoice) {
         case '+':
             resultNum = firstNum + secondNum;
+            break;
         case '-':
             resultNum = firstNum - secondNum;
+            break;
         case '*':
             resultNum = firstNum * secondNum;
+            break;
         case '/':
             resultNum = firstNum / secondNum;
+            break;
         default:
-            resultNum = 0.00;
+            cout << "You are a dumbass" << std::endl;
+            break;
         }
         cout << resultNum << std::endl;
     }

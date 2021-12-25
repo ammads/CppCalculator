@@ -10,7 +10,7 @@ int main()
 
     int numberOne = calc.firstNum;
     int numberTwo = calc.secondNum;
-    int op = calc.methodChoice;
+    char op = calc.methodChoice;
     string choice = "N";
 
     while (choice == "N" || choice == "n")
